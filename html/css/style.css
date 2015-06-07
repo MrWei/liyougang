@@ -1,3 +1,20 @@
+h1,h2,h3,h4,h5,h6,input,form,ul,li,p,table,dl,dt,dd{padding: 0;margin: 0; list-style: none;}
+body{color: #444;}
+
+a, a:hover, a:link, a:active, a:focus {
+  color: #444;
+  outline: medium none;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #0866c6;
+  outline: medium none;
+  text-decoration: none;
+}
+
+.blink20{overflow: hidden;clear: both;  height: 20px;}
+
 .header .logo{padding-top: 30px;}
 .headmenu > li.right { color: #fff;}
 .headmenu > li.right a{color: #fff; padding: 0px;display: inline-block; min-width: 0px;}
@@ -5,3 +22,29 @@
 .head-yiqi{background-image: url(../images/icons/yiqi.png);}
 .head-weight{background-image: url(../images/icons/weight.png);}
 .head-water{background-image: url(../images/icons/water.png);}
+/*banner*/
+#Banner{ height:355px; overflow: hidden; background-repeat: no-repeat; position: relative;}
+#Banner .slide{width: 100%; position: relative; height: 355px; overflow: hidden;}
+#Banner .slide ul{}
+#Banner .slide li{  height: 355px; background-position: top center; background-repeat: no-repeat;}
+
+#indexPro{overflow: hidden; background: url(../images/bg2.png) top center no-repeat; }
+#indexPro .item{ float: left; width: 30%; margin-left: 2%; margin-right: 1%; }
+#indexPro .item .icons{width: 45px; height: 54px; float: left;}
+#indexPro .item .icons_i1{background-image: url(../images/t1.png);}
+#indexPro .item .icons_i2{background-image: url(../images/t2.png);}
+#indexPro .item .icons_i3{background-image: url(../images/t3.png);}
+#indexPro .item .con{ margin-left: 60px;}
+#indexPro .item h2{font-size: 16px; color: #0866c6;}
+#indexPro .item ul.list{padding-top: 15px;}
+#indexPro .item a.more{display: inline-block; width: 100px; background: url(../images/jt.gif) 30px 9px no-repeat; margin-top: 10px;}
+
+#foot-nav .title{ font-weight: normal; height: 40px;font-weight: bold; line-height: 40px; border-bottom: #ddd 1px solid; color: #0866c6; font-size: 20px; background: url(../images/foot_nav_bg.gif) right 10px no-repeat; }
+#foot-nav {overflow: hidden; padding:0 2% 0px 2%;background: url(../images/bg3.png) top center no-repeat;}
+#foot-nav .cell{float: left;  width: 15%; margin-left: 1%; margin-top:30px;}
+#foot-nav .cell h2{font-size: 12px;}
+#foot-nav .cell .list{margin-top: 15px;padding-bottom: 15px;}
+#foot-nav .cell .list li{line-height: 25px;}
+#foot-nav .cell .list li.currclass a{ color: #328116;}
+
+#foot{ height: 68px; line-height: 68px; border-top: #ddd 1px solid;  text-align: center;}

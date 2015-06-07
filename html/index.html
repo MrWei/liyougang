@@ -1,133 +1,517 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>In-group</title>
-<link rel="stylesheet" href="css/style.default.css" type="text/css" />
-<link rel="stylesheet" href="css/style.css" type="text/css" />
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
-<style type="text/css">
-    body{background-image: none;}
-</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In-group</title>
+    <link rel="stylesheet" href="css/style.default.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--[if lte IE 8]>
+    <script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script>
+    <![endif]-->
+    <style type="text/css">body{background-image: none;}</style>
 </head>
 
 <body>
 
-<div class="mainwrapper">
-    
-    <div class="header">
-        <div class="logo">
-            <a href="/"><img src="images/logo.png" alt="" /></a>
+    <div class="mainwrapper">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="logo">
+                <a href="/">
+                    <img src="images/logo.png" alt="" />
+                </a>
+            </div>
+            <div class="headerinner">
+                <ul class="headmenu">
+                    <li class="odd">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="head-icon head-users"></span>
+                            <span class="headmenu-label">企业信息</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-header">Messages</li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-envelope"></span>
+                                    New message from <strong>Jack</strong>
+                                    <small class="muted">- 19 hours ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-envelope"></span>
+                                    New message from <strong>Daniel</strong>
+                                    <small class="muted">- 2 days ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-envelope"></span>
+                                    New message from
+                                    <strong>Jane</strong>
+                                    <small class="muted">- 3 days ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-envelope"></span>
+                                    New message from
+                                    <strong>Tanya</strong>
+                                    <small class="muted">- 1 week ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-envelope"></span>
+                                    New message from
+                                    <strong>Lee</strong>
+                                    <small class="muted">- 1 week ago</small>
+                                </a>
+                            </li>
+                            <li class="viewmore">
+                                <a href="messages.html">View More Messages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="odd">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+                            <span class="head-icon head-yiqi"></span>
+                            <span class="headmenu-label">科学仪器</span>
+                        </a>
+                        <ul class="dropdown-menu newusers">
+                            <li class="nav-header">New Users</li>
+                            <li>
+                                <a href="">
+                                    <img src="images/photos/thumb1.png" alt="" class="userthumb" />
+                                    <strong>Draniem Daamul</strong>
+                                    <small>April 20, 2013</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/photos/thumb2.png" alt="" class="userthumb" />
+                                    <strong>Shamcey Sindilmaca</strong>
+                                    <small>April 19, 2013</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/photos/thumb3.png" alt="" class="userthumb" />
+                                    <strong>Nusja Paul Nawancali</strong>
+                                    <small>April 19, 2013</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/photos/thumb4.png" alt="" class="userthumb" />
+                                    <strong>Rose Cerona</strong>
+                                    <small>April 18, 2013</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/photos/thumb5.png" alt="" class="userthumb" />
+                                    <strong>John Doe</strong>
+                                    <small>April 16, 2013</small>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="odd">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+                            <span class="head-icon head-weight"></span>
+                            <span class="headmenu-label">称重设备</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-header">Statistics</li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-align-left"></span>
+                                    New Reports from
+                                    <strong>Products</strong>
+                                    <small class="muted">- 19 hours ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-align-left"></span>
+                                    New Statistics from
+                                    <strong>Users</strong>
+                                    <small class="muted">- 2 days ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-align-left"></span>
+                                    New Statistics from
+                                    <strong>Comments</strong>
+                                    <small class="muted">- 3 days ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-align-left"></span>
+                                    Most Popular in
+                                    <strong>Products</strong>
+                                    <small class="muted">- 1 week ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-align-left"></span>
+                                    Most Viewed in
+                                    <strong>Blog</strong>
+                                    <small class="muted">- 1 week ago</small>
+                                </a>
+                            </li>
+                            <li class="viewmore">
+                                <a href="charts.html">View More Statistics</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="odd">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+                            <span class="head-icon head-water"></span>
+                            <span class="headmenu-label">水质监测</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-header">Statistics</li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-align-left"></span>
+                                    New Reports from
+                                    <strong>Products</strong>
+                                    <small class="muted">- 19 hours ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-align-left"></span>
+                                    New Statistics from
+                                    <strong>Users</strong>
+                                    <small class="muted">- 2 days ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-align-left"></span>
+                                    New Statistics from
+                                    <strong>Comments</strong>
+                                    <small class="muted">- 3 days ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-align-left"></span>
+                                    Most Popular in
+                                    <strong>Products</strong>
+                                    <small class="muted">- 1 week ago</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-align-left"></span>
+                                    Most Viewed in
+                                    <strong>Blog</strong>
+                                    <small class="muted">- 1 week ago</small>
+                                </a>
+                            </li>
+                            <li class="viewmore">
+                                <a href="charts.html">View More Statistics</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="odd">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+                            <span class="head-icon head-message"></span>
+                            <span class="headmenu-label">联系我们</span>
+                        </a>
+                    </li>
+                    <li class="right">
+                        <a href="#">中文版</a>
+                        |
+                        <a href="">English</a>
+                    </li>
+                </ul>
+                <!--headmenu--> </div>
         </div>
-        <div class="headerinner">
-            <ul class="headmenu">
-                <li class="odd">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <span class="head-icon head-users"></span>
-                        <span class="headmenu-label">企业信息</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-header">Messages</li>
-                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Jack</strong> <small class="muted"> - 19 hours ago</small></a></li>
-                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Daniel</strong> <small class="muted"> - 2 days ago</small></a></li>
-                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Jane</strong> <small class="muted"> - 3 days ago</small></a></li>
-                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Tanya</strong> <small class="muted"> - 1 week ago</small></a></li>
-                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Lee</strong> <small class="muted"> - 1 week ago</small></a></li>
-                        <li class="viewmore"><a href="messages.html">View More Messages</a></li>
-                    </ul>
-                </li>
-                <li class="odd">
-                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
-                    <span class="head-icon head-yiqi"></span>
-                    <span class="headmenu-label">科学仪器</span>
-                    </a>
-                    <ul class="dropdown-menu newusers">
-                        <li class="nav-header">New Users</li>
+        <!-- banner -->
+        <div id="Banner">
+            <div class="slide">
+                <ul>
+                    <li style="background-image:url(images/banner.jpg)"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blink20"></div>
+        <!-- 三大块产品 -->
+        <div id="indexPro">
+            <div class="item">
+                <div class="icons icons_i1"></div>
+                <div class="con">
+                    <h2>实验室科学仪器</h2>
+                    <ul class="list">
                         <li>
-                            <a href="">
-                                <img src="images/photos/thumb1.png" alt="" class="userthumb" />
-                                <strong>Draniem Daamul</strong>
-                                <small>April 20, 2013</small>
-                            </a>
+                            <a href="">专业技术检测与卫生服务</a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="images/photos/thumb2.png" alt="" class="userthumb" />
-                                <strong>Shamcey Sindilmaca</strong>
-                                <small>April 19, 2013</small>
-                            </a>
+                            <a href="">专业技术检测与卫生服务</a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="images/photos/thumb3.png" alt="" class="userthumb" />
-                                <strong>Nusja Paul Nawancali</strong>
-                                <small>April 19, 2013</small>
-                            </a>
+                            <a href="">专业技术检测与卫生服务</a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="images/photos/thumb4.png" alt="" class="userthumb" />
-                                <strong>Rose Cerona</strong>
-                                <small>April 18, 2013</small>
-                            </a>
+                            <a href="">专业技术检测与卫生服务</a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="images/photos/thumb5.png" alt="" class="userthumb" />
-                                <strong>John Doe</strong>
-                                <small>April 16, 2013</small>
-                            </a>
+                            <a href="">专业技术检测与卫生服务</a>
                         </li>
                     </ul>
-                </li>
-                <li class="odd">
-                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
-                    <span class="head-icon head-weight"></span>
-                    <span class="headmenu-label">称重设备</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-header">Statistics</li>
-                        <li><a href=""><span class="icon-align-left"></span> New Reports from <strong>Products</strong> <small class="muted"> - 19 hours ago</small></a></li>
-                        <li><a href=""><span class="icon-align-left"></span> New Statistics from <strong>Users</strong> <small class="muted"> - 2 days ago</small></a></li>
-                        <li><a href=""><span class="icon-align-left"></span> New Statistics from <strong>Comments</strong> <small class="muted"> - 3 days ago</small></a></li>
-                        <li><a href=""><span class="icon-align-left"></span> Most Popular in <strong>Products</strong> <small class="muted"> - 1 week ago</small></a></li>
-                        <li><a href=""><span class="icon-align-left"></span> Most Viewed in <strong>Blog</strong> <small class="muted"> - 1 week ago</small></a></li>
-                        <li class="viewmore"><a href="charts.html">View More Statistics</a></li>
+                    <a href="#" class="more">更多</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icons icons_i2"></div>
+                <div class="con">
+                    <h2>称重设备系统</h2>
+                    <ul class="list">
+                        <li>
+                            <a href="">专业技术检测与卫生服务</a>
+                        </li>
+                        <li>
+                            <a href="">专业技术检测与卫生服务</a>
+                        </li>
+                        <li>
+                            <a href="">专业技术检测与卫生服务</a>
+                        </li>
+                        <li>
+                            <a href="">专业技术检测与卫生服务</a>
+                        </li>
+                        <li>
+                            <a href="">专业技术检测与卫生服务</a>
+                        </li>
                     </ul>
-                </li>
-                 <li class="odd">
-                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
-                    <span class="head-icon head-water"></span>
-                    <span class="headmenu-label">水质监测</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-header">Statistics</li>
-                        <li><a href=""><span class="icon-align-left"></span> New Reports from <strong>Products</strong> <small class="muted"> - 19 hours ago</small></a></li>
-                        <li><a href=""><span class="icon-align-left"></span> New Statistics from <strong>Users</strong> <small class="muted"> - 2 days ago</small></a></li>
-                        <li><a href=""><span class="icon-align-left"></span> New Statistics from <strong>Comments</strong> <small class="muted"> - 3 days ago</small></a></li>
-                        <li><a href=""><span class="icon-align-left"></span> Most Popular in <strong>Products</strong> <small class="muted"> - 1 week ago</small></a></li>
-                        <li><a href=""><span class="icon-align-left"></span> Most Viewed in <strong>Blog</strong> <small class="muted"> - 1 week ago</small></a></li>
-                        <li class="viewmore"><a href="charts.html">View More Statistics</a></li>
+                    <a href="#" class="more">更多</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icons icons_i3"></div>
+                <div class="con">
+                    <h2>水质监测系统</h2>
+                    <ul class="list">
+                        <li>
+                            <a href="">专业技术检测与卫生服务</a>
+                        </li>
+                        <li>
+                            <a href="">专业技术检测与卫生服务</a>
+                        </li>
+                        <li>
+                            <a href="">专业技术检测与卫生服务</a>
+                        </li>
+                        <li>
+                            <a href="">专业技术检测与卫生服务</a>
+                        </li>
+                        <li>
+                            <a href="">专业技术检测与卫生服务</a>
+                        </li>
                     </ul>
-                </li>
-                 <li class="odd">
-                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#">
-                    <span class="head-icon head-message"></span>
-                    <span class="headmenu-label">联系我们</span>
-                    </a>
-                </li>
-                <li class="right">
-                   <a href="#">中文版</a> | <a href="">English</a>
-                </li>
-            </ul><!--headmenu-->
+                    <a href="#" class="more">更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="blink20"></div>
+        <!-- 底部导航 -->
+        <div id="foot-nav">
+            <div class="title">解决方案</div>
+            <div class="cell">
+                <h2>按产品及解决方案</h2>
+                <ul class="list">
+                    <li class="currclass">
+                        <a  href="/Item/list.asp?id=21">企业集散控制系统（DCS）</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=20">称重系统</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=19">实验室称重</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=18">实验室分析仪器</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=17">产品在线检测</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=16">包装/灌装</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=15">检重和失重系统</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=14">标准称重</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=13">仪表与传感器</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell">
+                <h2>按应用</h2>
+                <ul class="list">
+                    <li class="currclass">
+                        <a  href="/Item/list.asp?id=29">实验室称量应用</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=28">实验室分析应用</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=27">自动化化学</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=26">过程检测/在线分析</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=25">工业称重应用</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=24">产品检测</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=23">运输与物流应用</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=22">零售应用</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell">
+                <h2>按行业</h2>
+                <ul class="list">
+                    <li class="currclass">
+                        <a  href="/Item/list.asp?id=41">化工</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=40">医药</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=39">食品与饮料</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=38">科研与教育</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=37">专业技术检测与卫生服务</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=36">金属、电子、塑料与橡胶制品</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=35">建材、冶金、采矿与合成材料</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=34">造纸与纺织</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=33">机械及设备制造</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=32">交通运输与物流</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=31">水、电、气、环保等公共服务业</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=30">零售业</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell">
+                <h2>按工作场所</h2>
+                <ul class="list">
+                    <li class="currclass">
+                        <a  href="/Item/list.asp?id=52">研发</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=51">工程，工艺开发和放大</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=50">实验室检测和质量控制</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=49">收货和仓储</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=48">生产和加工</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=47">包装和灌装</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=46">物流和发运</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=45">维护和服务</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=44">IT信息技术</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=43">零售</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=42">水、电和能源保障</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell">
+                <h2>服务与支持</h2>
+                <ul class="list">
+                    <li class="currclass">
+                        <a  href="/Item/list.asp?id=62">服务提供</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=60">产品登记</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=57">技术交流会&培训</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell">
+                <h2>关于我们</h2>
+                <ul class="list">
+                    <li class="currclass">
+                        <a  href="/Item/list.asp?id=74">招聘信息</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=75">信息中心</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=76">业务概况</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=78">可持续性</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=80">关于我们</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=5">NEWS</a>
+                    </li>
+                    <li>
+                        <a  href="/Item/list.asp?id=6">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 版权 -->
+        <div class="blank20"></div>
+        <div id="foot">
+            Copyright © 2007-2014 in-group.cn All Rights Reserved 版权所有 常熟英格罗普机电设备有限公司 苏ICP备14027251号
         </div>
     </div>
-    
-    
-    
-</div>
 </body>
 </html>
