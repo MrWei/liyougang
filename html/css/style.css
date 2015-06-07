@@ -1,0 +1,7 @@
+.header .logo{padding-top: 30px;}
+.headmenu > li.right { color: #fff;}
+.headmenu > li.right a{color: #fff; padding: 0px;display: inline-block; min-width: 0px;}
+
+.head-yiqi{background-image: url(../images/icons/yiqi.png);}
+.head-weight{background-image: url(../images/icons/weight.png);}
+.head-water{background-image: url(../images/icons/water.png);}
