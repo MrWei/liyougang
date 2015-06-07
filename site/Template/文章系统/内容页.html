@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$GetSEOTitle}-{$GetSiteTitle}</title>
+<link href="{$GetSiteUrl}images/style.css" rel="stylesheet" type="text/css" />
+<meta name="keywords" content="{$GetSEOKeyWords}"/>
+<meta name="description" content="{$GetSEODescription}"/>
+<script type="text/javascript" src="{$GetSiteUrl}ks_inc/jquery.js"></script>
+<script type="text/javascript" src="{$GetSiteUrl}ks_inc/common.js"></script>
+
+
+<!--[if IE 6]>
+<script src="{$GetSiteUrl}js/iepng.js" type="text/javascript"></script>
+<script type="text/javascript">
+   EvPNG.fix('div, ul, img, li, input'); 
+</script>
+<![endif]-->
+
+<script language=JavaScript type=text/JavaScript>
+//改变图片大小
+function resizepic(thispic){ if(thispic.width>400) thispic.width=400;}
+function showimg(src){	 $.dialog({id:'{$infoid}',title:'查看原图：',content: '<div><img onload="if(980<this.offsetWidth)this.width=980;" style="max-width:980px" src="'+src+'"/></div>',max:false,min: false});}
+//无级缩放图片大小
+function bbimg(o){
+  var zoom=parseInt(o.style.zoom, 10)||100;
+  zoom+=event.wheelDelta/12;
+  if (zoom>0) o.style.zoom=zoom+'%';
+  return false;}
+</script>
+
+</head>
+
+<body>
+ {LB_2014头部}
+
+<div id="wrap">
+
+ <div class="clearfloat"></div>
+ <div id="content">
+<div class="navigation">{LB_位置导航}</div>
+   <div id="main2"> 
+     <div id="xinwen">
+	   <div id="xw_hear">
+	     <div id="xw_title"><h2>{$GetArticleTitle}</h2></div>
+		 <div id="xw_xinxi"><span>时间：{$GetArticleDate}</span>   <span>信息来源：{$GetArticleOrigin}</span>  <span>点击：<em>{$GetHits}</em>次</a></span> 
+           【<a href="{$GetSiteUrl}User/User_Favorite.asp?Action=Add&ChannelID={$ChannelID}&InfoID={$InfoId}" target="_blank">收藏此文</a>】{$GetArticleSize}
+         </div>
+	   </div>
+	   
+	   <div id="xw_content" style="text-indent:20px">
+	      {$GetArticleContent}
+			{$GetArticlePageList}
+	     
+         <div class="foot">(作者：{$GetArticleAuthor}  编辑：{$GetUserName})</div>
+         
+        
+	   </div>
+            <div class="clearfloat"></div>
+        <div id="xgxw">
+          <div class="xgtitle">相关新闻</div>
+              <ul>
+                {LB_相关链接2}
+                
+          </ul> 
+          
+          <div class="zg2">
+          <div class="sharebox">
+					<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a>
+								  <script language="javascript" type="text/javascript" 
+								 src="http://static.bshare.cn/b/button.js#uuid=8a5892db-a8f6-4b91-b5dd-93753bd581aa&style=2&textcolor=#000&bgcolor=none&bp=qqmb,
+								  sinaminiblog,sohubai,renren&ssc=false&sn=true&text=分享到">
+                                  </script>
+                                  
+
+				      	</div>
+            
+          </div>
+          
+         
+            
+           
+          
+        </div>
+        
+        <!--心情指数-->
+							<div class="moodbox">
+								   <ul>
+									 <script language="javascript" type="text/javascript"src="{$GetSiteUrl}plus/digmood/mood.asp?id=6&c_id={$InfoID}&M_id={$ChannelID}"></script>
+								   </ul>
+								</div>
+							 <!--心情指数-->
+        
+        
+        <div id="wyhs">
+                <h2>我有话说</h2>
+               {$GetShowComment}   {$GetWriteComment} 
+        </div>
+         
+	 </div>
+   </div>
+   <div id="side2">
+	    <div class="tab2">
+	        <div id="bt">
+                <h3><span>最</span>新文章</h3>
+			 </div>
+		  
+			<div id="zxwz">
+			  <ul>
+			     {LB_最新文章}
+				
+			  </ul>
+			  
+		  </div>
+
+
+		
+	</div>
+	
+	
+	<div class="tab2">
+		   <div id="bt">
+			 <h3><span>推</span>荐文章</h3>
+		  </div>
+		  <div id="zxwz">
+			  <ul>
+			     {LB_推荐文章}
+			  </ul>
+			  
+		  </div>
+
+			
+
+	</div>
+	
+	
+	
+	  <div class="tab2">
+		   <div id="bt">
+				<h3><span>热</span>门文章</h3>		
+		   </div>
+		  
+			<div id="zxwz">
+			  <ul>
+			     {LB_热门文章}
+				 
+				
+			  </ul>
+			  
+		  </div>
+
+
+		
+	</div>
+	
+	
+	
+	 </div>
+ </div>
+  <div class="clearfloat"></div>
+ <div id="footer">
+   {LB_2014底部}
+</div>
+
+
+</div>
+
+
+</body>
+</html>
