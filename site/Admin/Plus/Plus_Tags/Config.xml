@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <MyApp>
 	<App>
 		<AppName>作者/来源/关键字</AppName>
 		<Role>tags</Role>
-		<AppStatus>1</AppStatus>
+		<AppStatus>0</AppStatus>
 		<AppItem>
 			<ItemName>关键字Tags管理</ItemName>
 			<ItemUrl><![CDATA[Plus_Tags/KS.KeyWord.asp]]></ItemUrl>

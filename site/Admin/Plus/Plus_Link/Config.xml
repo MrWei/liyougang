@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <MyApp>
-   <App>
+	<App>
 		<AppName>链接管理</AppName>
 		<Role>link</Role>
-		<AppStatus>1</AppStatus>
+		<AppStatus>0</AppStatus>
 		<AppItem>
 			<ItemName>友情链接管理</ItemName>
 			<ItemUrl><![CDATA[Plus_Link/KS.FriendLink.asp]]></ItemUrl>
@@ -28,6 +28,5 @@
 			<Ico>6.png</Ico>
 			<Order>1</Order>
 		</AppItem>
-  </App>
+	</App>
 </MyApp>
-

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <MyApp>
 	<App>
 		<AppName>采集插件</AppName>
 		<Role>collect</Role>
-		<AppStatus>1</AppStatus>
+		<AppStatus>0</AppStatus>
 		<AppItem>
 			<ItemName>采集项目管理</ItemName>
 			<ItemUrl><![CDATA[Plus_Collect/Collect_Main.asp]]></ItemUrl>

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <MyApp>
-<App>
+	<App>
 		<AppName>调查及反馈</AppName>
 		<Role>vote</Role>
-		<AppStatus>1</AppStatus>
+		<AppStatus>0</AppStatus>
 		<AppItem>
 			<ItemName>站点调查管理</ItemName>
 			<ItemUrl><![CDATA[Plus_Vote/KS.Vote.asp]]></ItemUrl>
@@ -20,7 +20,5 @@
 			<Ico>6.png</Ico>
 			<Order>1</Order>
 		</AppItem>
-</App>
+	</App>
 </MyApp>
-
-

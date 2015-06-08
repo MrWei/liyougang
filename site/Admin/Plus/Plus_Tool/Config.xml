@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <MyApp>
-<App>
+	<App>
 		<AppName>辅助工具</AppName>
 		<Role>tool</Role>
 		<AppStatus>1</AppStatus>
-        <AppItem>
+		<AppItem>
 			<ItemName>数据库维护工具</ItemName>
 			<ItemUrl><![CDATA[Plus_Tool/KS.Database.asp?Action=BackUp]]></ItemUrl>
 			<Attribute>Disabled</Attribute>
@@ -12,7 +12,7 @@
 			<Ico>6.png</Ico>
 			<Order>1</Order>
 		</AppItem>
-        <AppItem>
+		<AppItem>
 			<ItemName>数据库字段值替换</ItemName>
 			<ItemUrl><![CDATA[Plus_Tool/KS.DataReplace.asp]]></ItemUrl>
 			<Attribute>Disabled</Attribute>
@@ -20,7 +20,7 @@
 			<Ico>6.png</Ico>
 			<Order>1</Order>
 		</AppItem>
-        <AppItem>
+		<AppItem>
 			<ItemName>在线执行SQL语句</ItemName>
 			<ItemUrl><![CDATA[Plus_Tool/KS.Database.asp?Action=ExecSql]]></ItemUrl>
 			<Attribute>Disabled</Attribute>
@@ -28,7 +28,7 @@
 			<Ico>6.png</Ico>
 			<Order>1</Order>
 		</AppItem>
-        <AppItem>
+		<AppItem>
 			<ItemName>上传文件管理</ItemName>
 			<ItemUrl><![CDATA[Plus_Tool/KS.AdminFiles.asp]]></ItemUrl>
 			<Attribute>Disabled</Attribute>
@@ -36,7 +36,6 @@
 			<Ico>6.png</Ico>
 			<Order>1</Order>
 		</AppItem>
-				
 		<AppItem>
 			<ItemName>数据批量导入工具</ItemName>
 			<ItemUrl><![CDATA[Plus_Tool/KS.Import.asp]]></ItemUrl>
@@ -61,7 +60,6 @@
 			<Ico>6.png</Ico>
 			<Order>1</Order>
 		</AppItem>
-		
 		<AppItem>
 			<ItemName>服务器参数探测工具</ItemName>
 			<ItemUrl><![CDATA[../System/KS.Setting.asp?Action=CopyRight]]></ItemUrl>
@@ -70,9 +68,5 @@
 			<Ico>6.png</Ico>
 			<Order>1</Order>
 		</AppItem>
-		
-		
-</App>
+	</App>
 </MyApp>
-
-

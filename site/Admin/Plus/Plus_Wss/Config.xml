@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <MyApp>
-<App>
+	<App>
 		<AppName>站点统计插件</AppName>
 		<Role>wss</Role>
-		<AppStatus>1</AppStatus>
+		<AppStatus>0</AppStatus>
 		<AppItem>
 			<ItemName>WSS统计配置</ItemName>
 			<ItemUrl><![CDATA[Plus_WSS/wss.asp]]></ItemUrl>
@@ -28,7 +28,5 @@
 			<Ico>6.png</Ico>
 			<Order>1</Order>
 		</AppItem>
-</App>
+	</App>
 </MyApp>
-
-
