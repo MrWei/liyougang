@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<title>考试频道</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Cache-control" content="max-age=1700">
+<meta name="viewport" content="user-scalable=no, width=device-width">
+<meta name="MobileOptimized" content="320">
+<meta name="author" content="kesion.com">
+<meta name="format-detection" content="telephone=no">
+<link href="{$GetSiteUrl}3g/images/style.css" rel="stylesheet" type="text/css">
+<script src="{$GetSiteUrl}ks_inc/jquery.js"></script>
+<style>
+.lmbg .lmbgtit{ background:url({$GetSiteUrl}3g/images/tit09.png) no-repeat 50% 50%;}
+</style>
+
+</head>
+
+<body>
+{LB_3G通用头部通用}
+<div class="sjcategory">
+	<ul><li><b>分类:</b></li>{$GetSJCategory}</ul>
+	<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="location">{$Navigation}</div>
+<div class="LMlist">
+	<div class="box02" style="border-top:1px solid #fff">
+		<ul>
+			{@loop.begin}
+					
+				<li><span style="float:right;color:#888;font-size:13px">{@item.getdate}</span>[<a href="{@item.classurl}" class="a_cor">{@item.classname}</a>]<a href="{@item.linkurl}">{@item.title} </a></li>
+					
+			{@loop.end}
+		</ul>
+		<div style="clear: both"></div>
+		{@list.showpage}
+   </div>
+	  
+</div>
+
+<div class="footbig"><div class="foot"><a href="javascript:;" onClick="history.back()">返回前页</a> <a href="channel.asp?id={$GetChannelID}">返回{$GetChannelName}</a></div></div>
+</body>
+</html>

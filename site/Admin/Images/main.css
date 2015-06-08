@@ -1,0 +1,62 @@
+﻿*{margin:0;padding:0;word-wrap:break-word;}
+body{font-size:12px;font-family:"\5FAE\8F6F\96C5\9ED1";color:#333; background:#f3f7fb url(bg27.png) repeat-y}
+html, body, h1, h2, h3, h4, ul, li, dl,input{ margin:0px;padding:0px;list-style-type:none }
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a img{border:none;} 
+div,ul,li,p,form{padding: 0px; margin: 0px;list-style-type: none;}
+em{font-style: normal;font-weight: normal;}
+table {padding: 0px; margin: 0px;list-style-type: none;}
+dt,dl,dd {padding: 0px; margin: 0px;list-style-type: none;}
+form{margin:0px;padding:0px;}
+tr {padding: 0px; margin: 0px;list-style-type: none;}
+h3,h4{padding:0px; font-size:14px; font-weight:bold;}
+.clear {clear:both;height:0px; overflow:hidden;}
+.blank10{height:10px;overflow:hidden;}
+.hide{ display:none}
+
+
+/*右边*/
+.rightmain{ margin:25px 30px 0px 5px;}
+.rightmain .welcomebox{ height:75px;}
+.rightmain .welcomebox .user_l{width:75px; float:left}
+.rightmain .welcomebox .user_l .userpicbg{width:58px; height:58px; background:url(imgbox.gif) no-repeat; position:absolute;}
+.rightmain .welcomebox .user_l img{width:52px; height:52px;margin:2px 0px 0px 3px; background:#fff;}
+.rightmain .welcomebox .user_r{ float:left; line-height:23px; padding-top:5px;color:#666;} 
+.rightmain .welcomebox .user_r strong{color:#444;}
+.rightmain .welcomebox .user_r strong span.span01{color:#06abde}
+.rightmain .welcomebox .user_r span.span02{color:#444; padding:0px 3px}
+.rightmain .welcomebox .user_r span.span03{color:#e14d64; padding:0px 3px}
+
+.rightmain .statebox{ padding:10px 15px 12px 48px; background:#e4f1fb url(bg23.png) no-repeat 15px 18px;border:1px solid #bcdbf5;color:#666;
+border-radius: 2px; line-height:22px}
+.rightmain .statebox span{color:#333;}
+.rightmain .statebox a{color:#e00404; text-decoration:underline; padding-right:5px}
+
+.rightmain .shortcutbox{border-radius: 2px;background:#fff; margin-top:25px; padding-bottom:8px;border:1px solid #ebf0f5; border-bottom:1px solid #d3d7da;border-right:1px solid #d3d7da}
+.rightmain .shortcutbox h4{ height:26px; line-height:26px;font-weight:normal;font-size:14px; padding-left:15px;border-bottom:1px solid #d3d7da; background:url(bg24.png) repeat-x;}
+.titlek { background:url(titlek_bg_z.png);line-height:28px; font-weight:bold;height:30px; color:#555; margin-left:20px;margin-right:20px;text-decoration:none;font-size:14px; margin-top:10px; padding-left:40px; padding-top:8px; position:relative; margin-bottom:0px; }
+.titlec {line-height:20px; font-weight:bold; color:#555; margin-left:10px;margin-right:10px;text-decoration:none;font-size:14px; padding-left:4px;  padding-bottom:10px; margin-top:0px;overflow:hidden;_height:100%; padding:8px 0px}
+.titlec .Cp_box{ padding:12px 10px 10px 10px; margin:10px 2px 0px 10px;border:1px solid #e1e1e1; float:left; width:65px; height:60px; font-size:13px; font-weight:500; text-align:center; position:relative ; overflow:hidden;border-radius: 2px; line-height:22px }
+.titlec .Cp_box .delico{ display:none;position:absolute; top:0px; right:0px;}
+.titlec .Cp_box .delico img{border:1px  solid #CCCCCC;}
+.titlec .Cp_box .editico{ display:none;position:absolute; top:0px; right:0px;}
+.addstyle {position:absolute; right:0px;top:7px;}
+.titlec .Cp_boxG{position:relative;padding:12px 10px 10px 10px; margin:10px 2px 0px 10px;border:1px solid #afdaee; background: #f5fcff; float:left; width:65px; height:60px; font-size:13px; font-weight:500; text-align:center;overflow:hidden;border-radius: 2px;  line-height:22px }
+.titlec .Cp_boxG .delico{position:absolute; top:0px; right:0px; cursor:pointer;}
+.titlec .Cp_boxG .delico img{}
+.titlec .Cp_boxG .editico{position:absolute; top:0px; left:0px; cursor:pointer;}
+.titlec .Cp_boxG .editico img{border:1px  solid #e5e5e5;}
+			
+
+.rightmain .chenxubox{margin-top:15px}
+.rightmain .chenxubox .leftbox{width:49%;border-radius: 2px; float:left;border:1px solid #ebf0f5;border-bottom:1px solid #d3d7da;border-right:1px solid #d3d7da; height:210px; background:#fff;}
+.rightmain .chenxubox .leftbox h4{ height:26px; line-height:26px;font-weight:normal;font-size:14px; padding-left:15px;border-bottom:1px solid #d3d7da; background:url(bg24.png) repeat-x}
+.rightmain .chenxubox .leftbox div{ padding:10px 15px; line-height:26px}
+
+
+.rightmain .chenxubox .rightbox{width:49%;border-radius: 2px; float:right;border:1px solid #ebf0f5;border-bottom:1px solid #d3d7da;border-right:1px solid #d3d7da; height:210px; background:#fff;overflow:hidden}
+.rightmain .chenxubox .rightbox h4{ height:26px; line-height:26px;font-weight:normal;font-size:14px; padding-left:15px;border-bottom:1px solid #d3d7da; background:url(bg24.png) repeat-x}
+.rightmain .chenxubox .rightbox ul{ padding:10px 15px 10px 15px;}
+.rightmain .chenxubox .rightbox ul li{ height:24px; line-height:24px; background:url(bg25.png) no-repeat 0 50%; padding-left:10px}
+.rightmain .chenxubox .rightbox ul li span{ float:right;color:#888}

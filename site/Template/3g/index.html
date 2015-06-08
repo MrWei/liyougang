@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<title>{$Get3GSiteName}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Cache-control" content="max-age=1700">
+<meta name="viewport" content="user-scalable=no, width=device-width">
+<meta name="MobileOptimized" content="320">
+<meta name="author" content="kesion.com">
+<meta name="format-detection" content="telephone=no">
+<link href="{$GetSiteUrl}3g/images/style.css" rel="stylesheet" type="text/css">
+<script src="{$GetSiteUrl}ks_inc/jquery.js"></script>
+<script src="{$GetSiteUrl}ks_inc/common.js"></script>
+<script src="{$GetSiteUrl}3g/images/lrtk.js"></script>
+</head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!--
+if(navigator.platform == "Win32" && window.self==window.top){
+	location.href="default.asp";
+}
+//-->
+</SCRIPT>
+<script type="text/javascript"> 
+//===========================点击展开关闭效果====================================
+function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
+var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
+var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
+var openTip = oOpenTip || "";
+var shutTip = oShutTip || "";
+if(targetObj.style.display!="none"){
+   if(shutAble) return;
+   targetObj.style.display="none";
+   if(openTip && shutTip){
+    sourceObj.innerHTML = shutTip; 
+   }
+} else {
+   targetObj.style.display="block";
+   if(openTip && shutTip){
+    sourceObj.innerHTML = openTip; 
+   }
+}
+}
+</script>
+<div class="navpositionbig">
+	<div class="navposition">
+		<div class="logonav"><div class="fl"><img src="{$GetSiteUrl}3g/images/logo.png" /></div><div class="fr">{$GetUserLogin}</div></div>
+		<div class="header">
+			<ul>
+				<li class="curr"><a href="{$GetInstallDir}3g"><img src="{$GetSiteUrl}3g/images/001.png" /><br />首页</a></li>
+				<li><a href="user.asp"><img src="{$GetSiteUrl}3g/images/05.png" /><br />会员</a></li>
+				<li><a href="weibo.asp"><img src="{$GetSiteUrl}3g/images/003.png" /><br />微博</a></li>
+				<li><a href="bbs.asp"><img src="{$GetSiteUrl}3g/images/007.png" /><br />论坛</a></li>
+				<li class="more"><a href="#" onClick="openShutManager(this,'box2013')" ><img src="{$GetSiteUrl}3g/images/06.png" /><br />更多</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script>
+function checksearch(){
+ if ($("#key").val()==''){
+  alert('请输入搜索关键字！');
+  $("#key").focus();
+  return false
+ }
+ return true;
+}
+</script>
+<form name="search" action="search.asp" method="post">
+<input type="text" name="key" id="key"/>
+<input type="submit" value=" " class="sbtn" onClick="return(checksearch())"/>
+</form>
+<div id="box2013" style="display:none">
+	<div class="topbg"></div>
+	<ul>
+		{$GetModelList}
+	</ul>
+	<div class="clear"></div>
+</div>
+<div class="focus">
+    <ul class="rslides f426x240">
+       {LB_3G图片新闻幻灯}
+    </ul>
+</div>
+<div class="clear"></div>
+
+
+
+
+<div class="clear"></div>
+<div class="LMlist">
+	<div class="indexmain">
+		<h4>最新图文报导</h4>
+		<ul>
+			{LB_3G图文新闻报导}
+		</ul>
+	</div>
+</div>
+<div class="end">
+	Copyright &copy; 2006-2014 Powered by Kesion.COM，<br />科汛网络开发 All Rights Reserved.
+</div>
+</body>
+</html>

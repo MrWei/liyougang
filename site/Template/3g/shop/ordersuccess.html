@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<title>商城购物 &gt;&gt; 订单提交成功</title>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta http-equiv="Cache-control" content="max-age=1700">
+<meta name="viewport" content="user-scalable=no, width=device-width">
+<meta name="MobileOptimized" content="320">
+<meta name="author" content="kesion.com">
+<meta name="format-detection" content="telephone=no">
+<link href="../images/style.css" type=text/css rel=stylesheet>
+<script src="{$GetInstallDir}ks_inc/jquery.js" type="text/javascript"></script>
+<script src="{$GetInstallDir}ks_inc/common.js" type="text/javascript"></script>
+<style>
+.lmbg .lmbgtit{ background:url({$GetSiteUrl}3g/images/tit07.png) no-repeat 50% 50%;}
+</style>
+
+</head>
+<body>
+{LB_3G通用头部通用}
+<div class="gwc_bg"><a href='/3g/shop/shoppingcart.asp'><script src="{$GetInstallDir}3g/shop/CartNum.asp"></script></a></div>
+<div class="MiddleCont">
+
+
+<!--商品内容页begin-->
+<div class="cartbox">
+   <div class="succ_content" style="padding:10px 15px; line-height:24px;color:#555;">
+     <div class="title">成功提交订单</div>
+	  <div class="paylbox">
+	    <ul>
+		  尊敬的用户，恭喜您，您的订单已提交成功！<br />
+		   付款成功后，才能完成本次交易，请尽快付款 ！<br />
+		   订单号是：<font color="#005599"><strong>{$ShowOrderID}</strong> </font>,您需要支付：<font color="#FF0000"><strong>￥{$ShowTotalMoney}</strong></font>元
+	    </ul>
+	  </div>
+	  
+	   <div class="title">选择在线支付</div>
+	  <div class="payrbox">
+	    <div class="payl">
+		   {$PayMentList}
+		</div>
+		<div class="payr">
+		    <h2>您还可以选择以下支付方式: </h2>
+	   <Input onClick="window.location.href='../USER.asp?Action=addpayment&ID={$ShowOrderAutoID}';" type="image" src="{$GetInstallDir}Images/shop_btn8.gif" border=""0"" alt="余额支付" name=botton32>
+                          &nbsp;&nbsp;
+                          <Input id=s onClick="window.location.href='showpay.asp';" type="image" src="{$GetInstallDir}Images/shop_btn9.gif" border=""0"" alt="银行汇款" name=s>
+                          &nbsp;&nbsp;
+		</div>
+	  </div>
+	  
+  
+	  
+   </div>
+   
+
+</div>
+</div>
+
+<div class="footbig"><div class="foot"><a href="../index.asp" onClick="history.back()">返回首页</a> <a href="../channel.asp?id=5">返回商城首页</a></div></div>
+
+
+</div>
+
+</body>
+</html>
