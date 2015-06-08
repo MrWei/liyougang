@@ -18,7 +18,7 @@ Const IsBusiness=False             '是否正式官方授权版本，免费版�
 '========数据库设置开始========
  If DataBaseType=0 then
 '如果是ACCESS数据库，请认真修改好下面的数据库的文件名
-	DBPath       = "/KS_Data/ingroup_weiyong@20150607.mdb"     'ACCESS数据库的文件名，请使用相对于网站根目录的的绝对路径
+	DBPath       = "/KS_Data/ingroup@weiyong.mdb"     'ACCESS数据库的文件名，请使用相对于网站根目录的的绝对路径
 Else
 		 '如果是SQL数据库，请认真修改好以下数据库选项
 	 DataServer   = ""                                  '数据库服务器IP

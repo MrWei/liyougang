@@ -3,7 +3,7 @@
 	<App>
 		<AppName>广告管理</AppName>
 		<Role>ads</Role>
-		<AppStatus>1</AppStatus>
+		<AppStatus>0</AppStatus>
 		<AppItem>
 			<ItemName>广告管理</ItemName>
 			<ItemUrl><![CDATA[Plus_Ads/KS.Ads.asp]]></ItemUrl>

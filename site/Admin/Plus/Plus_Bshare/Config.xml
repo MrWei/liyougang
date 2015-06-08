@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <MyApp>
 	<App>
 		<AppName>Bshare分享插件</AppName>
 		<Role>bshare</Role>
-		<AppStatus>1</AppStatus>
+		<AppStatus>0</AppStatus>
 		<AppItem>
 			<ItemName>Bshare插件配置</ItemName>
 			<ItemUrl><![CDATA[Plus_Bshare/bshare.asp]]></ItemUrl>

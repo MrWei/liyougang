@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <MyApp>
 	<App>
 		<AppName>DIG/点评/评论</AppName>
 		<Role>dig</Role>
-		<AppStatus>1</AppStatus>
+		<AppStatus>0</AppStatus>
 		<AppItem>
 			<ItemName>文档DIG管理</ItemName>
 			<ItemUrl><![CDATA[Plus_DigMood/KS.DiggList.asp]]></ItemUrl>

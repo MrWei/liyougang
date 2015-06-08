@@ -323,21 +323,7 @@ function swapIt(o) {
 				<li id="left_tab6" <%If Instr(Request.Cookies(KS.SiteSn)("ModelPower"),"sysset0")>0 and Request.Cookies(KS.SiteSn)("SuperTF")<>"1" then response.Write(" style='display:none' ") %>onclick="javascript:showleft(6);" title="系统管理"><a  href="javascript:;">设置</a></li>
            </ul>
        </div>
-       <div class="menucenter2" style="display:none">
-           <ul>
-            <%
-				Dim KSAnnounceDisplayFlag:KSAnnounceDisplayFlag=""
-			    If Instr(KS.Setting(16),"1")=0 Then
-				 Response.Write "<script src=""../ks_inc/time/3.js""></script>"
-				 KSAnnounceDisplayFlag=" style=""display:none"""
-				End If
-				%>
-				<span<%=KSAnnounceDisplayFlag%>>
-                <iframe scrolling=no src="http://www.kesion.com/websystem/GetofficialInfo.asp" name="ShowAnnounce" id="ShowAnnounce" height="20" width="100%" marginheight="0" marginwidth="0" frameborder="0" align="middle" allowtransparency="true"></iframe>
-                </span>
-            
-              </ul>
-		</div>
+
 		<div class="menuright">
 		 <ul><li><a href="../" target="_blank"><img src="images/bg08.png" title="网站首页" /></a></li>
 		 <li><a href="../User/User_Message.asp?action=inbox" target="_blank"><img src="images/bg09.png" alt="站内短信" /><span id='newmessage' style="display:none"><img src="images/bg17.png" style="position:absolute;margin:1px 0px 0px -5px" /></span></a></li>
@@ -1124,9 +1110,7 @@ Sub KS_Main()
 			%>
 			</div>
 			<div class="clear"></div>
-			<div class="statebox" style="margin-left:10px;color:#666">
-				KesionCMS<span style="font-size:12px;vertical-align:super;color:#666">&reg;</span>系统由漳州科兴信息技术有限公司(<a href="http://www.kesion.com" target="_blank" style="color:#666; text-decoration:none">Kesion.Com</a>)独立开发，软件制作权登记号：<a href="javascript:;" onClick="showbigpic()" style="color:#666; text-decoration:none">2012SR058633</a>。任何个人或组织不得在授权允许的情况下删除、修改、拷贝本软件及其它副本上一切关于版权的信息。<span id="currversion"></span>
-			</div>
+			
 			<div class="shortcutbox" style="margin-left:10px">
 				<h4 style="font-family:simhei">快捷通道</h4>
 				<ul>
@@ -1161,25 +1145,8 @@ Sub KS_Main()
 
 
 			<div class="chenxubox" style="margin-left:10px">
-				<div class="leftbox">
-					<h4 style="font-family:simhei">程序信息</h4>
-					<div>
-					当前版本：<%=KS.Version%><br />
-					<%if CheckNewVersion then%>
-						最新版本：<span id='versioninfo' style="color:#e00404"><script src="http://www.kesion.com/websystem/GetofficialInfo.asp?action=getverbyscript"></script></span>
-					<%end if%><br />
-					产品开发：漳州科兴信息技术有限公司<br />
-					咨询热线：400-0080-263<br />
-					营销QQ：<iframe scrolling="no" frameborder="0" width="120" height="35" allowtransparency="true"  src="http://static.b.qq.com/account/bizqq/wpa/wpa_a04.html?type=4&amp;kfuin=4000080263&amp;ws=http%3A%2F%2Fwww.oppo.com&amp;btn1=%E5%9C%A8%E7%BA%BF%E5%AE%A2%E6%9C%8D&amp;cref=http%3A%2F%2Fwww.oppo.com&amp;pt=-%20OPPO%20%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99"></iframe>4000080263<br />
-					在线升级：<span id='updateInfo'>正在检测最新版本信息...</span>
-					</div>
-				</div>
-				<div class="rightbox"<%If Instr(KS.Setting(16),"2")=0 Then response.write " style='display:none'"%>>
-					<h4 style="font-family:simhei">技术论坛新帖</h4>
-					<ul>
-						<script charset="utf-8" id="showtopic" src="http://bbs.kesion.com/Dv_News.asp?GetName=newtopic"></script>
-					</ul>	
-				</div>
+				
+				
 			</div>
  </div>
 </body>

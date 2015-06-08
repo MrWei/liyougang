@@ -195,7 +195,7 @@ Sub Main()
 			</ul>
 		</div>
 		<div class="right">
-				<h2 style="font-size:21px;margin:20px 0px 20px 28px;_margin-top:10px; font-family:simhei"><span style="color:#ee9043; padding-right:5px; font-family:Arial, Helvetica, sans-serif;">KesionCMS<b style="vertical-align:super;font-weight:normal; ">&reg;</b></span>网站后台管理系统 X<%=GetVer%></h2>
+				<h2 style="font-size:21px;margin:20px 0px 20px 28px;_margin-top:10px; font-family:simhei">网站后台管理系统 X<%=GetVer%></h2>
 					<div class="tabbox">
 						<ul id="regSpan" class="companyul">
 							<li style="z-index:1000">
@@ -283,7 +283,7 @@ function CheckForm(ObjForm) {
 </script>
 
 <div class="foot">
-	<p>漳州科兴信息技术有限公司 Copyright &copy;2006-<%=year(now)%> <a href="http://www.kesion.com" target="_blank"> www.kesion.com</a>,All Rights Reserved. </p>
+	
 </div>
 <br/><br/><br/>
 </div>
